@@ -15,7 +15,7 @@ class Graph{
   addEdgeList(from, to){
     this.adjList[from].push(to);
   }
-  BSF(start){
+  BFS(start){
     // 初始化
     this.color = [];
     this.predecessor = [];
@@ -106,6 +106,6 @@ graph.addEdgeList(3, 4);graph.addEdgeList(3, 5);
 graph.addEdgeList(5, 1);
 graph.addEdgeList(6, 4);graph.addEdgeList(6, 7);
 graph.addEdgeList(7, 6);
-graph.BSF(0);
+graph.BFS(0);
 // graph.DFS(0);
 console.log(graph);
